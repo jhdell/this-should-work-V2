@@ -22,9 +22,9 @@
 
 
 <main id="main">
-<!-- ============== HERO (left: icons ABOVE + centered over copy; right: hero image) ============== -->
+<!-- ============== HERO (left: icons centered above copy + CTA centered below; right: hero image) ============== -->
 <section class="hero" aria-label="Skip the Trend. Fund a Life.">
-<!-- LEFT -->
+<!-- LEFT COLUMN -->
 <div class="hero-left">
 <a class="logo" href="#" aria-label="charity: water home">
 <img class="logo-icon" src="img/jerrycan.png" alt="charity: water jerrycan icon" />
@@ -32,9 +32,10 @@
 </a>
 
 
-<!-- Distributes content from top→bottom; icons centered above headline -->
+<!-- Distributes content top→middle→bottom -->
 <div class="left-stack">
-<!-- TOP: icons (centered to same width as the copy) -->
+<!-- TOP: icons row (centered over the same width as the copy) -->
+<div class="top-icons">
 <div class="mini-equation two-up" role="group" aria-label="Labubu equals Clean Water for Life">
 <figure class="mini-item">
 <div class="mini-img circle-bg"><img src="img/labubu.png" alt="Labubu toy" /></div>
@@ -45,6 +46,7 @@
 <div class="mini-img circle-bg"><img src="img/water-drop.png" alt="Water droplet icon" /></div>
 <figcaption>Clean Water for Life</figcaption>
 </figure>
+</div>
 </div>
 
 
@@ -58,7 +60,8 @@
 </div>
 
 
-<!-- BOTTOM: centered CTA -->
+<!-- BOTTOM: CTA centered and vertically centered within remaining space -->
+<div class="cta-zone">
 <div class="cta-wrap">
 <a class="btn-cta" href="#donate" role="button">Find Out How to Help Here
 <span class="cta-sub">(Or just buy a Labubu)</span>
@@ -66,19 +69,9 @@
 </div>
 </div>
 </div>
-
-
-<!-- RIGHT: hero image -->
-<div class="hero-right">
-<img src="img/hero.png" alt="Smiling child filling a jerrycan at a water pump" />
 </div>
-</section>
 
 
-<div class="bottom-band" aria-hidden="true"></div>
-</main>
-
-
-<footer class="site-footer" role="contentinfo"></footer>
-</body>
+<!-- RIGHT COLUMN: hero image -->
+<div class="hero-right">
 </html>
