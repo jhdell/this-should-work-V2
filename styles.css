@@ -1,0 +1,46 @@
+/* ======================= styles.css ======================= */
+:root{
+--brand-yellow:#F7C600;
+--brand-black:#0a0a0a;
+--text-on-dark:#fff;
+--text-on-light:#111;
+--panel-gradient:linear-gradient(180deg,#0a0a0a 0%,#1a1a1a 100%);
+--copy-width:48ch; /* used to align icons to the same center as the copy */
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text-on-light);background:#fff;line-height:1.55}
+h1{font-family:Montserrat,Arial,sans-serif}
+img{display:block;max-width:100%;height:auto}
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{left:0;top:0;background:#fff;padding:.5rem;z-index:999}
+:focus-visible{outline:3px solid var(--brand-yellow);outline-offset:3px}
+
+
+/* ================= HERO GRID ================= */
+.hero{display:grid;grid-template-columns:minmax(360px,1fr) 1fr;min-height:100vh}
+.hero-right img{width:100%;height:100%;object-fit:cover}
+
+
+/* LEFT COLUMN */
+.hero-left{background:var(--panel-gradient);color:var(--text-on-dark);padding:clamp(1.25rem,4vw,3rem);display:flex;flex-direction:column;min-height:100%}
+.logo{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit;margin-bottom:clamp(.5rem,1.5vw,1rem)}
+.logo-icon{width:30px;height:30px;object-fit:contain;border-radius:4px}
+.logo-text{font-family:Georgia,serif;letter-spacing:.04em;color:var(--text-on-dark)}
+
+
+/* Distribute content across the column height */
+.left-stack{flex:1;display:grid;grid-template-rows:auto 1fr auto;row-gap:clamp(1rem,2.5vw,2rem);align-items:center}
+
+
+/* Headline + copy */
+.hero-copy{max-width:var(--copy-width);justify-self:center;align-self:center;text-align:left}
+.headline{margin:.25rem 0 1rem;font-weight:800;font-size:clamp(2.2rem,5.2vw,3.9rem);line-height:1.08;color:#fff}
+.headline span{display:block}
+.headline span:first-child{white-space:nowrap} /* keep "Skip the Trend." on one line */
+
+
+/* Value prop: reduce widow/dangling words and balance lines */
+.lede{color:#e8e8e8;font-size:clamp(.98rem,2vw,1.08rem);margin:0;text-wrap:balance}
+
+
+}
